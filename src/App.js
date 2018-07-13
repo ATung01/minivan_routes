@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Map from './components/Map'
+console.log(process.env.REACT_APP_API_KEY)
+
 
 class App extends Component {
   render() {
