@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Map from './components/Map'
-import Waypoint from './components/Waypoint.js'
+import Waypoint from './components/Waypoint'
+import MapWithDirections from './components/MapWithDirections'
 console.log(process.env.REACT_APP_API_KEY)
+
 
 
 class App extends Component {
@@ -16,6 +18,7 @@ class App extends Component {
         </header>
         <Map/>
         <Waypoint/>
+        <MapWithDirections/>
       </div>
     );
   }
