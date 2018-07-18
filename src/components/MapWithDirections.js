@@ -50,5 +50,4 @@ class MapWithDirections extends Component {
   )}
 }
 
-
 export default MapWithDirections;
