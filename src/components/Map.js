@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { withGoogleMap, GoogleMap } from 'react-google-maps';
+
 class Map extends Component {
    render() {
-   const GoogleMapExample = withGoogleMap(props => (
+   const GoogleMapDefault = withGoogleMap(props => (
       <GoogleMap
         defaultCenter = { { lat: 40.756795, lng: -73.954298 } }
         defaultZoom = { 13 }
@@ -11,10 +12,11 @@ class Map extends Component {
    ));
    return(
       <div>
-        <GoogleMapExample
-          containerElement={ <div style={{ height: `500px`, width: '500px' }} /> }
+        <GoogleMapDefault
+          containerElement={ <div style={{ height: `90vh`, width: '90vw' }} /> }
           mapElement={ <div style={{ height: `100%` }} /> }
         />
+        
       </div>
    );
    }
